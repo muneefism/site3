@@ -1,0 +1,13 @@
+build-job:
+  stage: build
+  tags:
+    - hunt-lab
+  script:
+    - echo "Hello, $GITLAB_USER_LOGIN!"
+
+test-job1:
+  stage: test
+  tags:
+    - hunt-lab
+  script:
+    - echo "This job tests something"
